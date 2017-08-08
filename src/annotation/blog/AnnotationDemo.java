@@ -1,4 +1,4 @@
-package annotation.retry;
+package annotation.blog;
 
 import java.lang.annotation.ElementType;
 import java.lang.annotation.Retention;
@@ -7,7 +7,6 @@ import java.lang.annotation.Target;
 
 @Target(ElementType.METHOD)
 @Retention(RetentionPolicy.RUNTIME)
-public @interface Retry {
-	int interval() default 3;
-	int time() default 3000;
+public @interface AnnotationDemo {
+	String value() default "test";
 }

@@ -29,7 +29,9 @@ public class ConstantsTest {
 		}		
 	}
 	public static void main(String[] args) {
+		// 不接收常量参数也不会报错
 		ConstantsTest.doit(Constants1.CONSTANTS_A);
+		// 必须是枚举类型
 		ConstantsTest.doit2(Constants2.CONSTANTS_A);
 		ConstantsTest.doit2(Constants2.CONSTANTS_B);
 		ConstantsTest.doit(3);
